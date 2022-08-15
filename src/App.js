@@ -1,32 +1,16 @@
-import CardItem from './components/CardItem';
-import { pokemons } from './mock/mockedData'
 import { useState } from 'react';
-
+import SearchBox from './components/InputArea/SearchBox';
+import CardContainer from './components/Cards/CardContainer';
+import AppTitle from './components/Title/AppTitle';
 
 function App() {
   const [search,setSearch] = useState('')
+
   return (
     <div className="App">
-      <h1 className='app-title'>Pokemon</h1>
-      <div className='search-box'>
-        <input
-        onChange={(e)=>{setSearch(e.target.value)}}
-        className='search-input' 
-        type="text" />
-      </div>
-      <div className='card-container'>
-      {pokemons   
-      .filter((val)=>{if(search === ''){return val}else if(val.name.toLocaleLowerCase().includes(search.toLowerCase())){return val}
-      })
-      .map((pokemon,prefix)=>(
-         <CardItem
-         key={prefix}
-         name={pokemon.name}
-         sprite={pokemon.sprite}
-         />  
-      ))  
-    }
-     </div>
+      <AppTitle />
+      <SearchBox searchPokemon = { setSearch } />
+      <CardContainer defaultSearch = { search } />  
     </div>
   );
 }

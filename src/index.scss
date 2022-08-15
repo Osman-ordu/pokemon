@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
 body {
   margin: 0;
-  background-color:bisque;
-  color:brown;
+  background: #4a707a;
+  background: linear-gradient(to left, #4a707a,#7697a0,#94b0b7, #c2c8c5 );
+  color:#fff;
   font-family: 'Fira Code', 'monospace';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,7 +23,7 @@ body {
   outline: 0;
   font-size: 16px;
   background: transparent;
-  border-bottom: 1px solid brown;
+  border-bottom: 1px solid #ddddda;
   font-weight: 500;
   letter-spacing: 2px;
   color: brown;
@@ -38,7 +40,8 @@ body {
   height: 150px;
 }
 .card {
-  border: 1px solid brown;
+  border: 2px solid #ddddda;
+  box-shadow: 1px 1px 12px 1px #4a707a ;
   border-radius: 8px;
   margin: 10px;
   width: 23%;
