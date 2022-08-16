@@ -1,5 +1,6 @@
 import { pokemons } from '../../mock/mockedData'
 import CardItem from './CardItem';
+import './Cards.scss'
 
 
 const CardContainer = (props) => {

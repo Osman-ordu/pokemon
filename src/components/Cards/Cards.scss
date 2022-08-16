@@ -1,0 +1,29 @@
+.card-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+        border: 2px solid  #7697a0;
+        box-shadow: 1px 1px 6px 1px #4a707a;
+        border-radius: 8px;
+        margin: 10px;
+        width: 23%;
+        transition: 0.5s;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .poke-img {
+        width: 150px;
+        height: 150px;
+      }
+      @media only screen and (max-width: 600px){
+          .card {
+          width: 60%;
+        }
+        
+      }
+  }
+
+ 
